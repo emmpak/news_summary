@@ -1,8 +1,8 @@
 (function(exports) {
-  function Article(title,body, url) {
+  function Article(title,body, summary) {
     this.title = title;
     this.body = body;
-    this.url = url;
+    this.summary = summary;
   }
 
   exports.Article = Article;
