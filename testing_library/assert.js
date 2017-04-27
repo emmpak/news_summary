@@ -33,7 +33,7 @@ var assert = {
 
   doesInclude: function(container, item) {
     if (container.includes(item)) {
-      console.log(container + " includes " + item)
+      console.log("This is included")
     } else {
       console.error(container + " does not include " + item)
     }
