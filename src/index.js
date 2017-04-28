@@ -20,3 +20,7 @@ function showSummaryForCurrentPage() {
 function getArticleFromURL(location) {
   return location.hash.split("/")[1];
 };
+
+function getFullArticle(button) {
+  button.parentNode.innerHTML = articleList.getSpecificArticle(button.parentNode.getAttribute("id").slice(-1)).body;
+}
