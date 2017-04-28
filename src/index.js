@@ -1,6 +1,6 @@
 var controller = new ArticleController();
 var articleList = new ArticleList();
-// change response() to getAllArticles()
+// change response() to controller.getAllArticles()
 articleList.saveArticles(response());
 var articleListView = new ArticleListView(articleList);
 
