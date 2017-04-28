@@ -1,8 +1,10 @@
+
 (function(){
+  var article = { title: "Testing" }
   var articleList = new ArticleList();
-  articleList.saveArticles(response());
+  articleList.articles.push(article);
   var articleListView = new ArticleListView(articleList);
-  var html = "<h1><ul><li><div><a href=#articles/0>General election 2017: Tony Blair refuses to endorse Jeremy Corbyn for prime minister – politics live</a></div></li>"
-  assert.doesInclude(articleListView.getFormattedTitles(),html)
+  var html = "<h1><ul><li><div><a href=#articles/0>Testing</a></div></li></ul></h1>"
+  assert.isEqual(articleListView.getFormattedTitles(),html)
 
 })();
