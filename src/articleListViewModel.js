@@ -4,12 +4,6 @@
   };
 
   ArticleListView.prototype = {
-    getImages: function() {
-      var images = [];
-      for(var i = 0; i < this.articleList.articles.length; i++) {
-        images.push("<img src='" + + "'")
-      }
-    },
     getFormattedTitles: function() {
       var titles = [];
       for(var i = 0; i < this.articleList.articles.length; i++) {
