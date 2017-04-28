@@ -11,7 +11,7 @@
         var summary = "<div id='article-summary-" + i + "'></div>"
         titles.push("<li><div><a href=#articles/" + i + ">" + this.articleList.articles[i].title + "</a>" + summary + "</div></li>" + bodyIMG);
       };
-      return "<h1><ul>" + titles.join("") + "</ul><h1>";
+      return "<h1><ul>" + titles.join("") + "</ul></h1>";
     }
   }
   exports.ArticleListView = ArticleListView;
