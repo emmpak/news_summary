@@ -8,10 +8,11 @@
 
   Article.prototype = {
     getSummary: function() {
-      var xhr = new XMLHttpRequest();
-      xhr.open('GET', 'http://news-summary-api.herokuapp.com/aylien?apiRequestUrl=https://api.aylien.com/api/v1/summarize?url=' + this.url, false);
-      xhr.send();
-      this.summary =  JSON.parse(xhr.responseText).sentences.join(" ");
+      // var xhr = new XMLHttpRequest();
+      // xhr.open('GET', 'http://news-summary-api.herokuapp.com/aylien?apiRequestUrl=https://api.aylien.com/api/v1/summarize?url=' + this.url, false);
+      // xhr.send();
+      // this.summary =  JSON.parse(xhr.responseText).sentences.join(" ");
+      this.summary = "THIS IS A SUMMARY"
     },
     getImage: function() {
       div = document.createElement('div');
